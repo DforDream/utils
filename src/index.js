@@ -1,5 +1,5 @@
 import { Stack } from './Stack'
-
-module.exports = {
+const a = {
   Stack
 }
+export default a

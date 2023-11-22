@@ -5,3 +5,5 @@ src/
 .gitignore
 .npmignore
 .github/
+webpack.config.js
+package.json
