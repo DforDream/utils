@@ -1,5 +1,5 @@
 import { Stack } from './Stack'
 
-export default {
+module.exports = {
   Stack
 }
