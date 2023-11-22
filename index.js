@@ -1,1 +1,2 @@
-require('./test/index.js')
+import { Stack } from './lib/Stack'
+export { Stack }
