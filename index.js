@@ -1,5 +1,11 @@
-var Stack = require('./lib/Stack')
+// var Stack = require('./lib/Stack')
 
-module.exports = {
+// module.exports = {
+//   Stack
+// }
+
+import { Stack } from './lib/Stack'
+
+export {
   Stack
 }
