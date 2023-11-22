@@ -19,6 +19,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm install
+      - run: npm whoami
       - run: npm publish --access public
         env:
           # 通过NPM_TOKEN，Github Action才可以直接发布
