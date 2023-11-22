@@ -2,7 +2,7 @@ const a = '122'
 const b = () => {
   console.log9('b')
 }
-export default {
+module.exports =  {
   a,
   b
 }
