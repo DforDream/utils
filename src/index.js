@@ -1,5 +1,8 @@
-import { Stack } from './Stack'
-const a = {
-  Stack
+const a = '122'
+const b = () => {
+  console.log9('b')
 }
-export default a
+export default {
+  a,
+  b
+}
