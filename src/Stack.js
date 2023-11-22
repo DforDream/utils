@@ -1,8 +1,8 @@
 import {
   deepCopy,
   isFunction
-} from './common_utils'
-import ArrayBasedStruct from './ArrayBasedStruct'
+} from './common_utils.js'
+import {ArrayBasedStruct} from './ArrayBasedStruct.js'
 
 /**
 *栈结构

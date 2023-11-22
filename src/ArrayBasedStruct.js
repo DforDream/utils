@@ -1,4 +1,4 @@
-import { deepCopy } from "./common_utils"
+import { deepCopy } from "./common_utils.js"
 
 /**
  *基于数组实现的数据结构的基类

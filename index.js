@@ -1,5 +1,5 @@
 import { Stack } from './lib/Stack'
 
-module.exports = {
+export {
   Stack
 }
