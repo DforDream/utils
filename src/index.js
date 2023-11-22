@@ -4,4 +4,7 @@ export {
   Stack
 }
 
-export default name
+export default {
+  a: '123',
+  name
+}
