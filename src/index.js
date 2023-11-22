@@ -8,3 +8,8 @@ export default {
   a: '123',
   name
 }
+
+module.exports = {
+  name,
+  a: '123'
+}
