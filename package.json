@@ -1,6 +1,6 @@
 {
   "name": "@xingping/utils",
-  "version": "1.0.0-test23",
+  "version": "0.0.0-init",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
