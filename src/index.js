@@ -1,7 +1,5 @@
-import { Stack } from './Stack';
-import name from './test/index'
+import CacheData from '@/cache-data/index.js'
 
 export default {
-  Stack,
-  name
-};
+  CacheData
+}
