@@ -5,4 +5,5 @@ src/
 .gitignore
 .npmignore
 .github/
-webpack.config.js
+rollup.config.js
+tsconfig.json
