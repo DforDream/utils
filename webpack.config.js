@@ -2,7 +2,7 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: path.join(__dirname, "./src/index.js"),
   output: {
     path: path.join(__dirname, "lib/"),
@@ -23,5 +23,11 @@ module.exports = {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+    runtimeChunk: "single",
   },
 };

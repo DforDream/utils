@@ -1,8 +1,5 @@
-const a = '122'
-const b = () => {
-  console.log9('b')
-}
-module.exports =  {
-  a,
-  b
-}
+import { Stack } from './Stack';
+
+export default {
+  Stack,
+};

@@ -6,4 +6,3 @@ src/
 .npmignore
 .github/
 webpack.config.js
-package.json
