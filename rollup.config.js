@@ -8,31 +8,32 @@ import { terser } from "rollup-plugin-terser";
 
 export default {
   input: "src/index.ts",
-//   es6 的包 (esm)
-// 页面中直接引入(umd)
-// 在 nodejs 环境中使用(cjs)
+  //   es6 的包 (esm)
+  // 页面中直接引入(umd)
+  // 在 nodejs 环境中使用(cjs)
   output: [
     {
-      file: "lib/umd/index.js", 
+      file: "lib/umd/index.js",
       format: "umd",
       name: "utils",
-      exports: 'named',
+      exports: "named",
     },
     {
       file: "lib/index.js",
       format: "es",
       name: "utils",
-      exports: 'named',
+      exports: "named",
     },
     {
       file: "lib/cjs/index.js",
       format: "cjs",
       name: "utils",
-      exports: 'named',
+      exports: "named",
     },
   ],
-  watch: {  // 配置监听处理
-    exclude: 'node_modules/**'
+  watch: {
+    // 配置监听处理
+    exclude: "node_modules/**",
   },
   plugins: [
     terser(), // 压缩js
@@ -42,17 +43,17 @@ export default {
       tsconfig: "tsconfig.json",
       tsconfigOverride: {
         compilerOptions: {
-          declaration: true
-        }
+          declaration: true,
+        },
       },
-      clean: true
+      clean: true,
     }),
     // alias({
     //   entries: [{ find: "@", replacement: path.resolve(__dirname, "src") }]
     // }),
     babel({
-      babelHelpers: 'bundled',
-      exclude: 'node_modules/**'
+      babelHelpers: "bundled",
+      exclude: "node_modules/**",
     }),
   ],
 };
