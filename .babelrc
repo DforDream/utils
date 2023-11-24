@@ -1,11 +1,16 @@
 {
   "presets": [
+    "@babel/preset-typescript",
     [
       "@babel/preset-env",
       {
-        "modules": false
+        "modules": false,
+        // useBuiltIns: 'usage',
+        // corejs: 3,
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 11"]
+        }
       }
     ]
   ]
 }
-
